@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp SignIn</title>
+    <style>
+        .button-container 
+        {
+            text-align: center;
+            background-image: url(bg2.jfif);
+            background-size: cover;
+            position: relative;
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+            color: white;
+        }
+        .button-container input[type="button"] {
+            background-color: rgb(219, 235, 212);
+            color: rgb(7, 6, 6);
+            padding: 50px 60px;
+            margin: 10px 70px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 200px;
+            gap: 100px;
+        }
+        .button-container input[type="button"]:hover {
+            background-color: rgb(182, 102, 166);
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function SignUp(){
+            window.location.href="SignUp_Input.html";
+        }
+        function SignIn(){
+            window.location.href="SignIn_Input.html";
+        } 
+    </script>
+      <div class="button-container">
+        <h1>Welcome Users</h1>
+         <input type="button" onclick="SignUp()"value="SignUp">
+         <input type="button"onclick="SignIn()"value="SignIn">
+        </div>
+</body>
+</html>
